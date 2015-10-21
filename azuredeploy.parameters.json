@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "newStorageAccountName": {
-      "value": "your storage"
+      "value": "sbscorestorage"
     },
     "adminUserName": {
       "value": "admin name"
@@ -14,23 +14,17 @@
     "vmDnsName": {
       "value": "unique dns name"
     },
-    "imagePublisher": {
-      "value": "image Publisher"
+    "existingVirtualNetworkResourceGroup": {
+      "value": "sbsVN"
     },
-    "imageOffer": {
-      "value": "image Offer"
-    },
-    "imageSKU": {
-      "value": "image SKU"
-    },
-    "location": {
-      "value": "VM Location"
+    "subnetName": {
+        "value": "labs"
     },
     "vmSize": {
-      "value": "VM Size"
+      "value": "Standard_A1"
     },
     "puppet_master_server": {
-      "value": "Puppet Master Agent"
+      "value": "puppet.sbslabs.local"
     }
   }
 }
