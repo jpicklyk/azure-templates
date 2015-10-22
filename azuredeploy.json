@@ -63,7 +63,8 @@
   },
   "variables": {
     "location": "[resourceGroup().location]",
-    "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
+    "vNetResourceGroup": "sbscoreservices",
+    "vnetID": "[resourceId(variables('vNetResourceGroup'),'Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnet1Ref": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
     "vmExtensionName": "PuppetEnterpriseAgent",
     "vmName": "[parameters('vmDnsName')]",
