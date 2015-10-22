@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
 	"vmDnsName": {
-		"type": "string",
-		"metadata": {
-        	"description": "Virtual Machines Name"
-      	}
+	  "type": "string",
+	  "metadata": {
+	    "description": "Virtual Machines Name"
+      	  }
 	},
     "adminUserName": {
       "type": "string",
@@ -68,7 +68,7 @@
     "publicIPAddressName": "[parameters('vmDnsName')]",
     "publicIPAddressType": "Dynamic",
     "vmStorageAccountContainerName": "vhds",
-    "virtualNetworkName": "MyVNET",
+    "virtualNetworkName": "sbsVN",
     "addressPrefix": "10.0.0.0/16",
     "subnet1Name": "subnet-1",
     "subnet2Name": "subnet-2",
